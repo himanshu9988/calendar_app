@@ -1,0 +1,272 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Global container for consistent spacing */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+h1, h2 {
+    color: #3a3a3a;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the form inputs */
+input,
+textarea,
+button {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Input and Button Hover Effects */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input,
+textarea {
+    background-color: #f9f9f9;
+}
+
+input[type="datetime-local"] {
+    cursor: pointer;
+}
+
+/* Styling the Event Form */
+form {
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form p {
+    font-size: 14px;
+    color: green;
+    margin-top: 10px;
+}
+
+form p.error {
+    color: red;
+}
+
+/* Styling for Event List and Calendar */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li strong {
+    color: #007bff;
+    font-size: 18px;
+}
+
+li p {
+    color: #555;
+    font-size: 14px;
+}
+
+li .event-date {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Welcome Page Styling */
+.welcome-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin-top: 100px;
+    width: 90%;
+}
+
+.welcome-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.welcome-container .button-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-container .button-link:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* Calendar Page Styling */
+.calendar-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.calendar-container h2 {
+    margin-bottom: 20px;
+}
+
+.event-card {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 20px;
+    }
+
+    .navbar {
+        font-size: 16px;
+    }
+
+    .calendar-container {
+        padding: 10px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .button-link {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 5px 10px;
+    }
+
+    .welcome-container h1 {
+        font-size: 36px;
+    }
+
+    .event-card {
+        width: 90%;
+    }
+}
