@@ -1,3 +1,27 @@
+# The Structure of this Calendar App is as follows:-
+calendar_app/
+    manage.py
+    calendar_app/
+        settings.py
+        urls.py
+        wsgi.py
+    events/
+        models.py
+        serializers.py
+        views.py
+        urls.py
+calendar-frontend/
+    src/
+        components/
+            LoginForm.js
+            RegisterForm.js
+            EventList.js
+            EventForm.js
+            Navbar.js
+        App.js
+        index.js
+# Working of the App is:-
+First of all when we run the app through the terminal, a welcome page gets open and there we get two options, one is the login and other is the register. If the user is already registered then he/she can directly login and add,delete or edit the events according to his/her requirements. If the user is not registered the he/she can register first and after that login to the page and access the same functionalities.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
